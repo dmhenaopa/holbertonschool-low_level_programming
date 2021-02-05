@@ -8,3 +8,5 @@ A short description of each script:
 + 6-print_numberz.c: Prints all single digit numbers of base 10 starting from 0, followed by a new line. Not allowed to use any variable of type char, only use the putchar function.
 + 7-print_tebahpla.c: Prints the lowercase alphabet in reverse, followed by a new line.
 +
++ 9-print_comb.c: Prints all possible combinations of single-digit numbers. Numbers must be separated by ',', followed by a space. Numbers should be printed in ascending order.
++
