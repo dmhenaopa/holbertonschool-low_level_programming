@@ -9,4 +9,4 @@ A short description of each script:
 + 7-print_tebahpla.c: Prints the lowercase alphabet in reverse, followed by a new line.
 +
 + 9-print_comb.c: Prints all possible combinations of single-digit numbers. Numbers must be separated by ',', followed by a space. Numbers should be printed in ascending order.
-+
++ 10-print_comb2.c: Prints the numbers from 00 to 99. Numbers must be separated by ',', followed by a space. Numbers should be printed in ascending order, with two digits.
