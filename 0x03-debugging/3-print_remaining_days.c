@@ -12,17 +12,25 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-	if ((year % 4 == 0 || year % 400 == 0) && (year % 100 == 0))
-	{
-		if (month >= 2 && day >= 60)
-		{
-			day++;
-		}
+	int acumulate_days;
 
-		printf("Day of the year: %d\n", day);
-		printf("Remaining days: %d\n", 366 - day);
+	acumulate_days = 0;
+
+	if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+	{
+		int i;
+		int days_month[12] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+		for (i = 0; i < month; i++)
+		{
+			acumulate_days = +days_month[i];
+		}
+		acumulate_days = +day;
+		printf("Day of the year: %d\n", acumulate_days);
+		printf("Remaining days: %d\n", 366 - acumulate_days);
 	}
-	else
+
+	else if
 	{
 		if (month == 2 && day >= 59)
 		{
@@ -30,8 +38,16 @@ void print_remaining_days(int month, int day, int year)
 		}
 		else
 		{
-			printf("Day of the year: %d\n", day);
-			printf("Remaining days: %d\n", 365 - day);
+			int i;
+			int days_month[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+			for (i = 0; i < month; i++)
+			{
+				acumulate_days = +days_month[i];
+			}
+			acumulate_days = +day;
+			printf("Day of the year: %d\n", acumulate_days);
+			printf("Remaining days: %d\n", 365 - acumulate_days);
 		}
 	}
 }
