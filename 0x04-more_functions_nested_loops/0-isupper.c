@@ -14,7 +14,7 @@ int _isupper(int c)
 	{
 		answer = 1;
 	}
-	else if (c >= 97 && c <= 122)
+	else
 	{
 		answer = 0;
 	}
