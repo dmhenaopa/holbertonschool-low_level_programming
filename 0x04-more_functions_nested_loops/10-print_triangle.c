@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* main - C - More functions, more nested loops
+* print_triangle - C - More functions, more nested loops
 * @size: Integer size of the triangle.
 *
 * Description: Write a function that prints a triangle,
