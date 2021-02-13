@@ -26,7 +26,7 @@ int main(void)
 				printf("Fizz");
 			}
 
-			else if (i % 5 == 0)
+			else
 			{
 				printf("Buzz");
 			}
@@ -37,7 +37,10 @@ int main(void)
 			printf("%d", i);
 		}
 
-		printf(" ");
+		if (i < 100)
+		{
+			printf(" ");
+		}
 	}
 	printf("\n");
 	return (0);
