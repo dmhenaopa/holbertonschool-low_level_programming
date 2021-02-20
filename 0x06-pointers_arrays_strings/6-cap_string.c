@@ -31,19 +31,6 @@ char *cap_string(char *s)
 					continue;
 				}
 			}
-
-			else if (*(s + i) != separators[j])
-			{
-				if (*(s + i + 2) >= 65 && *(s + i + 2) <= 90)
-				{
-					*(s + i + 2) = *(s + i + 2) + 32;
-				}
-
-				else
-				{
-					continue;
-				}
-			}
 		}
 	}
 	return (s);
