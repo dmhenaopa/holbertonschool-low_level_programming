@@ -8,22 +8,22 @@
 */
 char *leet(char *s)
 {
-	int i;
-	int j;
-	char letter_array[] = {'a', 'A', 'e', 'E', 'o', 'O',
-				't', 'T', 'l', 'L', '\0'};
-	char number_array[] = {'4', '4', '3', '3', '0', '0',
-				'7', '7', '1', '1', '\0'};
+	int i = 0;
+	int j = 0;
+	char letter_array[] = {"aAeEoOtTlL"};
+	char number_array[] = {"4433007711"};
 
-	for (i = 0; *(s + i) != '\0'; i++)
+	while (*(s + i) != '\0')
 	{
-		for (j = 0; *(letter_array + j) != '\0'; j++)
+		while (*(letter_array + j) != '\0')
 		{
 			if (*(s + i) == *(letter_array + j))
 			{
 				*(s + i) = *(number_array + j);
 			}
+			j++
 		}
+		i++;
 	}
 	return (s);
 }
