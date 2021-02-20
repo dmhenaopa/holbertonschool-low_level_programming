@@ -18,7 +18,9 @@ char *leet(char *s)
 		for (j = 0; *(letter_array + j) != '\0'; j++)
 		{
 			if (*(s + i) == *(letter_array + j))
+			{
 				*(s + i) = *(number_array + j);
+			}
 		}
 	}
 	return (s);
