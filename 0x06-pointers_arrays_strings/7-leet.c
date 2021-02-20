@@ -13,17 +13,13 @@ char *leet(char *s)
 	char letter_array[] = {"aAeEoOtTlL"};
 	char number_array[] = {"4433007711"};
 
-	while (*(s + i) != '\0')
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		while (*(letter_array + j) != '\0')
+		for (j = 0; *(letter_array + j) != '\0'; j++)
 		{
 			if (*(s + i) == *(letter_array + j))
-			{
 				*(s + i) = *(number_array + j);
-			}
-			j++
 		}
-		i++;
 	}
 	return (s);
 }
