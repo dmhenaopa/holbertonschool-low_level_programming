@@ -10,8 +10,8 @@ char *leet(char *s)
 {
 	int i;
 	int j;
-	char letter_array[] = {"aAeEoOtTlL"};
-	char number_array[] = {"43071"};
+	char letter_array[] = "aAeEoOtTlL";
+	char number_array[] = "43071";
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
