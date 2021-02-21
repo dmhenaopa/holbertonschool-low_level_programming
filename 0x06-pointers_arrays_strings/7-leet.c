@@ -13,13 +13,13 @@ char *leet(char *s)
 	char letter_array[] = "aAeEoOtTlL";
 	char number_array[] = "43071";
 
-	for (i = 0; *(s + i) != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; letter_array[j] != '\0'; j++)
 		{
-			if (*(s + i) == letter_array[j])
+			if (s[i] == letter_array[j])
 			{
-				*(s + i) = number_array[j / 2];
+				s[i] = number_array[j / 2];
 			}
 		}
 	}
