@@ -19,7 +19,7 @@ char *leet(char *s)
 		{
 			if (s[i] == letter_array[j])
 			{
-				s[i] = number_array[j / 2];
+				s[i] = number_array[j];
 			}
 		}
 	}
