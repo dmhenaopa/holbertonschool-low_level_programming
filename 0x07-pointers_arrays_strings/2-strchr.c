@@ -20,15 +20,16 @@ char *_strchr(char *s, char c)
 			break;
 		}
 
-		else if (*(s + i) == '\0')
-		{
-			*s = '\0';
-		}
-
-		else
+		else if (*(s + i) != c)
 		{
 			continue;
 		}
+
+	}
+
+	if (*(s + i) == '\0')
+	{
+		*s = '\0';
 	}
 	return (s);
 }
