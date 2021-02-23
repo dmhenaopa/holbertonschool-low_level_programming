@@ -10,18 +10,25 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i;
-	int j;
-	unsigned int count;
+	int i = 0;
+	int j = 0;
+	unsigned int count = 0;
 
-	count = 0;
-	for (i = 0; *(s + i) != ' '; i++)
+	if (*(s + i) == '\0' || *(accept + j) == '\0')
 	{
-		for (j = 0; *(accept + j) != '\0'; j++)
+		return (count);
+	}
+
+	else
+	{
+		for (i = 0; *(s + i) != ' '; i++)
 		{
-			if (*(s + i) == *(accept + j))
+			for (j = 0; *(accept + j) != '\0'; j++)
 			{
-				count++;
+				if (*(s + i) == *(accept + j))
+				{
+					count++;
+				}
 			}
 		}
 	}
