@@ -21,9 +21,7 @@ int main(int argc, char *argv[])
 	sumatory = 0;
 	counter = 0;
 	if (argc == 1)
-	{
 		printf("0\n");
-	}
 
 	else if (argc >= 1)
 	{
@@ -37,9 +35,7 @@ int main(int argc, char *argv[])
 			}
 
 			else if (*argv[i] >= '0' || *argv[i] <= '9')
-			{
 				counter++;
-			}
 		}
 
 		for (i = 1; argv[i] != '\0'; i++)
@@ -52,9 +48,7 @@ int main(int argc, char *argv[])
 		}
 
 		if (counter == (argc - 1))
-		{	
 			printf("%d\n", sumatory);
-		}
 	}
 	return (answer);
 }
