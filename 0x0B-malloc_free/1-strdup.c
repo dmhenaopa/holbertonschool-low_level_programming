@@ -34,6 +34,12 @@ char *_strdup(char *str)
 		/*Assign memory space with malloc*/
 		copied_string = malloc(counter * sizeof(char));
 
+		/* If insufficient memory was available*/
+		if (!copied_string)
+		{
+			return (NULL);
+		}
+
 		/*Copy the string to copied_string variable*/
 		for (i = 0; i < counter; i++)
 		{
