@@ -18,20 +18,28 @@ char *_strdup(char *str)
 
 	counter = 0;
 
-	/*Determine the lenght of the string*/
-	for (i = 0; *(str + i) != '\0'; i++)
+	if (str == NULL)
 	{
-		counter++;
+		return (NULL);
 	}
 
-	/*Assign memory space with malloc*/
-	copied_string = malloc(counter * sizeof(char));
-
-	/*Copy the string to copied_string variable*/
-	for (i = 0; i < counter; i++)
+	else
 	{
-		*(copied_string + i) = *(str + i);
-	}
+		/*Determine the lenght of the string*/
+		for (i = 0; *(str + i) != '\0'; i++)
+		{
+			counter++;
+		}
 
+		/*Assign memory space with malloc*/
+		copied_string = malloc(counter * sizeof(char));
+
+		/*Copy the string to copied_string variable*/
+		for (i = 0; i < counter; i++)
+		{
+			*(copied_string + i) = *(str + i);
+		}
+
+	}
 	return (copied_string);
 }
