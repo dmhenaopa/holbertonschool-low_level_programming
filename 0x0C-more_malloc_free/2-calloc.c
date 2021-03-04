@@ -29,7 +29,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	}
 
 	/*Zero-initialized memory block*/
-	for (i = 0; i <= nmemb; i++)
+	for (i = 0; i < nmemb; i++)
 	{
 		*(pointer + i) = 0;
 	}
