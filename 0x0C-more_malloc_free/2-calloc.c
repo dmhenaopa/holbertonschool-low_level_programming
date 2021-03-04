@@ -24,6 +24,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	/*If array is NULL -return NULL*/
 	if (pointer == NULL)
 	{
+		free(pointer);
 		return (NULL);
 	}
 	return (pointer);
