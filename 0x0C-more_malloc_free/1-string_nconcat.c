@@ -50,7 +50,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		pointer_concat = malloc((s1_size + n + 1) * sizeof(char));
 
 	else if (n >= s2_size)
-		pointer_concat = malloc((s1_size + s2_size) * sizeof(char));
+		pointer_concat = malloc((s1_size + s2_size + 1) * sizeof(char));
 
 	if (pointer_concat == NULL)
 		return (NULL);
