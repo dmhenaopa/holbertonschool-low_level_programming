@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	/* + 1 for null character at the end of the array*/
 	if (n >= s2_size)
-		pointer_concat = malloc((s1_size + s2_size + 1) * sizeof(char));
+		pointer_concat = malloc((s1_size + s2_size) * sizeof(char));
 	else
 		pointer_concat = malloc((s1_size + n + 1) * sizeof(char));
 
