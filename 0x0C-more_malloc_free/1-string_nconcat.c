@@ -22,7 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	/*To know the size of the first string s1*/
+	/*To know the size of the first string s1 and s2*/
 	for (i = 0; *(s1 + i) != '\0'; i++)
 		s1_size = i;
 
@@ -32,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/* + 1 for null character at the end of the array*/
 	if (n < s2_size)
 		pointer_concat = malloc((s1_size + n + 1) * sizeof(char));
-	else
+	else if (n >= s2_size)
 		pointer_concat = malloc((s1_size + s2_size + 1) * sizeof(char));
 
 	if (pointer_concat == NULL)
@@ -46,7 +46,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		for (k = 0; *(s2 + k) != '\0' && k < n; k++, j++)
 			*(pointer_concat + j) = *(s2 + k);
 
-	else
+	else if (n >= s2_size)
 		for (k = 0; *(s2 + k) != '\0'; k++, j++)
 			*(pointer_concat + j) = *(s2 + k);
 
