@@ -16,13 +16,17 @@ struct dog
 	char *owner;
 };
 
+/*Define a new data type dog_t*/
+typedef struct dog dog_t;
+
 /*Prototype to initialize type struct dog*/
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
-/*Prototype*/
+/*Prototypes*/
 void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
 
 /*Define a new data type dog_t*/
-typedef struct dog dog_t;
+/*typedef struct dog dog_t;*/
 
 #endif
