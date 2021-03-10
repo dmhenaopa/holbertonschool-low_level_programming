@@ -1,6 +1,5 @@
 #ifndef DOG_H
 #define DOG_H
-
 /**
 * struct dog -C - Structures, typedef
 * @name: Name of dog
@@ -25,8 +24,6 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
 /*Prototypes*/
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
-
-/*Define a new data type dog_t*/
-/*typedef struct dog dog_t;*/
+void free_dog(dog_t *d);
 
 #endif
