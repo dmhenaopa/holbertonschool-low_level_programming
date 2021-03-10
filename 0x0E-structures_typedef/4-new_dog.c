@@ -39,7 +39,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	(*new_new_dog).owner[j] = '\0';
 
 	if (new_new_dog == NULL)
+	{
+		free((*new_new_dog).name);
+		free((*new_new_dog).owner);
+		free(new_new_dog);
 		return (NULL);
+	}
 
 	/*(*new_new_dog).name = name;*/
 	(*new_new_dog).age = age;
