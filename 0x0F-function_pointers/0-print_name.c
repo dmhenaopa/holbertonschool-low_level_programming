@@ -9,9 +9,6 @@
 */
 void print_name(char *name, void (*f)(char *))
 {
-	if (name == NULL)
-		return;
-
-	/*This can be (*f)(name)*/
-	f(name);
+	if (name != NULL)
+		f(name); /*This can be (*f)(name)*/
 }
