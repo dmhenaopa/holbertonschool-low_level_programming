@@ -12,7 +12,6 @@ void print_name(char *name, void (*f)(char *))
 	if (name == NULL)
 		return;
 
-	else
-		/*This can be (*f)(name)*/
-		f(name);
+	/*This can be (*f)(name)*/
+	f(name);
 }
