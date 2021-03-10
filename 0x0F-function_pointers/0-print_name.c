@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stdlib.h>
 /**
 * print_name - C - Function pointers
 * @name: Name that should be print
@@ -8,7 +9,7 @@
 */
 void print_name(char *name, void (*f)(char *))
 {
-	if (name != '\0')
+	if (name != NULL)
 	{
 		/*This can be (*f)(name)*/
 		f(name);
