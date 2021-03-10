@@ -1,7 +1,5 @@
 #include "dog.h"
 #include <stdlib.h>
-#include "dog.h"
-#include <stdlib.h>
 /**
 * new_dog - C - Structures, typedef
 * @name: Pointer to name of new dog
@@ -38,10 +36,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 		(*new_new_dog).owner[j] = *(owner + j);
 	(*new_new_dog).owner[j] = '\0';
 
+        if ((*new_new_dog).name == NULL)
+                free((*new_new_dog).name);
+
+        if ((*new_new_dog).owner == NULL)
+                free((*new_new_dog).owner);
+
 	if (new_new_dog == NULL)
 	{
-		free((*new_new_dog).name);
-		free((*new_new_dog).owner);
 		free(new_new_dog);
 		return (NULL);
 	}
