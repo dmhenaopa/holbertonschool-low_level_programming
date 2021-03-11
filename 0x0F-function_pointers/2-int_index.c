@@ -40,7 +40,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 			}
 
 			/* If not match between array and cmp*/
-			if (i == size - 1 && answer == 0)
+			if (i == size && answer == 0)
 				answer = -1;
 		}
 	}
