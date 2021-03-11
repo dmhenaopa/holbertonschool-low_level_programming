@@ -20,29 +20,28 @@ int int_index(int *array, int size, int (*cmp)(int))
 	int answer;
 
 	/*Handling errors*/
-	if (size <= 0)
+	if (size <= 0 || array == NULL || cmp == NULL)
 		answer = -1;
-	else
-	{
-		/*
-		* This must be done everytime with pointers
-		* verificate pointers aren't NULL
-		*/
-		if (array != NULL && cmp != NULL)
-		{
-			for (i = 0; i < size; i++)
-			{
-				if (cmp(*(array + i)) != 0)
-				{
-					answer = i;
-					break;
-				}
-			}
 
-			/* If not match between array and cmp*/
-			if (i == size && answer == 0)
-				answer = -1;
+	/*
+	* This must be done everytime with pointers
+	* verificate pointers aren't NULL
+	*/
+	if (array != NULL && cmp != NULL)
+	{
+		for (i = 0; i < size; i++)
+		{
+			if (cmp(*(array + i)) != 0)
+			{
+				answer = i;
+				break;
+			}
 		}
+
+		/* If not match between array and cmp*/
+		if (i == size && answer == 0)
+			answer = -1;
 	}
+
 	return (answer);
 }
