@@ -12,7 +12,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list list_to_print;
 	unsigned int i, value_to_print;
 
-	if (separator == NULL)
+	if (separator == NULL || n == 0)
 		return;
 
 	/*Initialize list*/
@@ -22,7 +22,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		value_to_print = va_arg(list_to_print, int);
 		printf("%d", value_to_print);
-		printf("%s", separator);
+		if (i < n - 1)
+			printf("%s", separator);
 	}
 
 	va_end(list_to_print);
