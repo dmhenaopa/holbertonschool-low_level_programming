@@ -17,8 +17,8 @@ int (*get_op_func(char *s))(int a, int b)
 		{"*", op_mul}, {"/", op_div},
 		{"%", op_mod}, {NULL, NULL}};
 
-	if (*s != '+' || *s != '-' || *s != '*' ||
-		*s != '/' || *s != '%')
+	if (*s != '+' && *s != '-' && *s != '*' &&
+		*s != '/' && *s != '%')
 	{
 		printf("Error\n");
 		exit(99);

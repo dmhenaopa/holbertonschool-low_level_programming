@@ -1,8 +1,8 @@
 #include "3-calc.h"
 /**
 * main - C - Function pointers
-* @a: Integer
-* @b: Integer
+* @argc: Number of arguments
+* @argv: Array of pointers
 *
 * Description: Main function
 * Return: integer 0 if everything is ok. 1 otherwise
