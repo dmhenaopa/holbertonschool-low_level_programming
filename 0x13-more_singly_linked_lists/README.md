@@ -5,4 +5,5 @@ This is a more advanced approach to linked list on C. A short description of eac
 + 3-add_nodeint_end.c: A function that adds a new node at the end of a listint_t list.
 + 4-free_listint.c: A function that frees a listint_t list.
 + 5-free_listint2.c: A function that frees a listint_t list and sets the head to NULL.
-+
++ 6-pop_listint.c: A function that deletes the head node of a listint_t linked list, and returns the head node’s data (n).
++ 
