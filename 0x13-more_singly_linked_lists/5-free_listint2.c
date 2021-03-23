@@ -13,6 +13,9 @@ void free_listint2(listint_t **head)
 	/* Assign the head pointer address to actual_node */
 	actual_node = *head;
 
+	if (actual_node == NULL)
+		return;
+
 	/* Iterate to delete node by node */
 	while (actual_node != NULL)
 	{
