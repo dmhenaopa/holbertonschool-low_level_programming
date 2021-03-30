@@ -22,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (filename == NULL)
 		return (0);
 	/* Open file */
-	file_descriptor = open("Requiescat", O_RDONLY);
+	file_descriptor = open(filename, O_RDONLY);
 	/*Verify if the open function has error*/
 	if (file_descriptor == -1)
 		return (0);
