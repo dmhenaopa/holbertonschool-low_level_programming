@@ -14,11 +14,10 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int file_descriptor, i;
+	int file_descriptor;
 	char *buffer;
-	ssize_t number_bytes, write_bytes, counter;
+	ssize_t number_bytes, write_bytes;
 
-	counter = 0;
 	/*Verify if filename is NULL*/
 	if (filename == NULL)
 		return (0);
@@ -40,18 +39,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		/*If not, print to the standard output the text*/
 		else
 		{
-			for (i = 0; buffer[i] != '\0'; i++)
-			{
-				write_bytes = write(1, &buffer[i], 1);
-				counter++;
-				if (write_bytes == -1)
-					return (0);
-			}
+			write_bytes = write(STDOUT_FILENO, buffer, number_bytes);
+			if (write_bytes == -1)
+				return (0);
+
 		}
 	}
-	if (counter != number_bytes)
-		return (0);
 	free(buffer);
 	close(file_descriptor);
-	return (counter);
+	return (write_bytes);
 }
