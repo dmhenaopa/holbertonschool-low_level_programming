@@ -35,7 +35,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 			return (0);
 		number_bytes = read(file_descriptor, buffer, letters);
 		/*Verify if file is empty*/
-		if (number_bytes == 0)
+		if (number_bytes == -1)
 			return (0);
 		/*If not, print to the standard output the text*/
 		else
