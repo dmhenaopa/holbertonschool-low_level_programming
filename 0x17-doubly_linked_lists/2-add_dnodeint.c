@@ -36,11 +36,11 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	/* 4. Make the second node point to the new node */
 	if (*head != NULL)
-	{	
+	{
 		(*head)->prev = new_node;
 	}
 
 	/* 5. Move the head to point to the new_node */
 	*head = new_node;
-	return(new_node);
+	return (new_node);
 }
