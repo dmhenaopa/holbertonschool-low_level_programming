@@ -12,14 +12,9 @@
 */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *new_node, copy_pointer;
+	dlistint_t *new_node, *copy;
 
-	/* Guard code */
-	if (head == NULL)
-	{
-		return (NULL);
-	}
-
+	copy = *head;
 	/* 1. Allocate new_node */
 	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
@@ -27,18 +22,32 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		return (NULL);
 	}
 
-	/* 2. Put data in the new_node */
+	/**
+	* 2. Put data in the new_node and prepare
+	* new_node to be the end of the list - NULL
+	*/
 	new_node->n = n;
-
-	/* 3. Make new_node the tail */
 	new_node->next = NULL;
 
-	/* 4. Traverse the list until the end */
-	if (head != NULL)
+	/* 3. If the linked list is empty */
+	if (*head == NULL)
 	{
-		copy_pointer = *head;
-		head = head->next;
+		new_node->prev = NULL;
+		*head = new_node;
 	}
 
-	/* 5. 
+	else
+	{
+		/* 4. Traverse the list until the end */
+		while (copy->next)
+		{
+			copy = copy->next;
+		}
+
+		/* 5. Put new_node at the end of list */
+		copy->next = new_node;
+		new_node->prev = copy;
+	}
+
+	return (new_node);
 }
