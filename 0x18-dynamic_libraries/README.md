@@ -15,13 +15,13 @@ For incluide the library, use the flag -l with the name of the library. In this 
 For incluide the C library in Python files, you need to include something like this in the Python file:
 `cops = ctypes.CDLL('./100-operations.so')`
 
-For the shell Verify that the files have execution permissions before being used! **If not, use the following command:**
+For the shell scripts, verify that the files have execution permissions before being used! **If not, use the following command:**
 
     chmod u+x name_of_file ###To make the file executable
 
-In all cases, all files, the way to execute them is by putting a period and a slash before the command name. As follows:
+The way to execute this scripts is by putting a dot and a slash before the command name. As follows:
 
-    ./name_of_file ###To execute the file
+    `./name_of_file ###To execute the file`
 
 ### Executable files:
 Here a short description of each script/file:
@@ -30,6 +30,6 @@ Here a short description of each script/file:
 + [100-operations.so](https://github.com/dmhenaopa/holbertonschool-low_level_programming/blob/main/0x18-dynamic_libraries/100-operations.so): Dynamic library that contains C functions that can be called from Python.
 + [100-operations.c](https://github.com/dmhenaopa/holbertonschool-low_level_programming/blob/main/0x18-dynamic_libraries/100-operations.c): Functions with the neccesary operations to create a dynamic library. Additional to the header file [operations.h](https://github.com/dmhenaopa/holbertonschool-low_level_programming/blob/main/0x18-dynamic_libraries/operations.h).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDU4MjYxODEsLTIwNDM4NjA4MDgsMT
-gxNDgxNjc4MV19
+eyJoaXN0b3J5IjpbMTA0OTA2Mjk3MiwtMjA0Mzg2MDgwOCwxOD
+E0ODE2NzgxXX0=
 -->
