@@ -1,5 +1,5 @@
 ## :pencil2: C - Doubly linked lists
-This folder contains programs and functions to print, obtain information o
+This folder contains programs and functions to print, obtain information of nodes, add nodes to the list and functions that frees nodes of the list or the list itself. 
 
 ### Requirements:
 All commands were tested on Ubuntu 14.04 LTS. Although the commands might work well on other distributions, versions or operative systems. The programs and functions will be compiled with `gcc 4.8.4`. The prototypes of all the functions are included in the header file called  `lists.h`
@@ -22,6 +22,6 @@ Here a short description of each script:
 + [palindrome.c](https://github.com/dmhenaopa/holbertonschool-low_level_programming/blob/main/0x17-doubly_linked_lists/palindrome.c): A function to the largest palindrome made from the product of two 3-digit numbers.
 + [102-result](https://github.com/dmhenaopa/holbertonschool-low_level_programming/blob/main/0x17-doubly_linked_lists/102-result): The largest palindrome made from the product of two 3-digit numbers.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NTI3NTk4LC03MDExMzQ0OTMsNTM5OD
-A0NTU3XX0=
+eyJoaXN0b3J5IjpbLTQ4MDk0MzIwNywtNzAxMTM0NDkzLDUzOT
+gwNDU1N119
 -->
