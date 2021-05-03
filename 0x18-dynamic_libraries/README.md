@@ -8,9 +8,10 @@ For the C file, we need to use the compiler GCC:
 `gcc -Wall -Werror -Wextra -pedantic all_the_c_files.c -o output_name`
 
 For the Dynamic libraries: 
-For incluide the library, use the flag -l with the name of the library:
-`gcc -Wall -pedantic -Werror -Wextra -L. 0-main.c -lholberton -o len``
+For incluide the library, use the flag -l with the name of the library. In this example we have the library holberton (libholberton.so):
+`gcc -Wall -pedantic -Werror -Wextra -L. 0-main.c -lholberton -o len`
 
+For incluide the C library in Python files
  
 ### Executable files:
 Here a short description of each script/file:
@@ -19,5 +20,5 @@ Here a short description of each script/file:
 + 100-operations.so: Dynamic library that contains C functions that can be called from Python.
 + 100-operations.c: Functions with the neccesary operations to create a dynamic library. Additional to the header file operations.h.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNjQ1NTQwOSwxODE0ODE2NzgxXX0=
+eyJoaXN0b3J5IjpbLTE0NzgzMTEyNTUsMTgxNDgxNjc4MV19
 -->
