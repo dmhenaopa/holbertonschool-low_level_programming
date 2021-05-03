@@ -24,21 +24,21 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	}
 
 	/* Verify that index is lower or has the same number of nodes */
-	while (copy_one != NULL && copy_one->next != NULL)
+	while (copy_one != NULL)
 	{
 		counter++;
 		copy_one = copy_one->next;
 	}
 
 	counter = counter - 1;
-	if (counter < index)
+	if (index > counter)
 	{
 		return (NULL);
 	}
 
-	else
+	else if (counter >= index)
 	{
-		for (i = 0; i <= index; i++)
+		for (i = 0; i <= index && copy_two != NULL; i++)
 		{
 			node_data = copy_two;
 			copy_two = copy_two->next;
