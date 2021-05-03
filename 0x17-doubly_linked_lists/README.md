@@ -6,5 +6,5 @@ A short description about each script:
 + 4-free_dlistint.c: A function that frees a dlistint_t list.
 + 5-get_dnodeint.c: A function that returns the nth node of a dlistint_t linked list.
 + 6-sum_dlistint.c: A function that returns the sum of all the data (n) of a dlistint_t linked list.
-+
++ palindrome.c: A function to the largest palindrome made from the product of two 3-digit numbers.
 + 102-result: The largest palindrome made from the product of two 3-digit numbers.
