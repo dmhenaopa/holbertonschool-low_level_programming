@@ -2,7 +2,7 @@
 This folder contains
 
 ### Requirements:
-All commands were tested on Ubuntu 14.04 LTS. Although the commands might work well on other distributions, versions or operative systems. 
+All commands were tested on Ubuntu 14.04 LTS. Although the commands might work well on other distributions, versions or operative systems. The programs and functions will be compiled with gcc 4.8.4. The prototypes of all the functions should be included in your header file called  `lists.h`
 
 ### Usage:
 For the C file, we need to use the compiler GCC:
@@ -22,5 +22,6 @@ Here a short description of each script:
 + [palindrome.c](https://github.com/dmhenaopa/holbertonschool-low_level_programming/blob/main/0x17-doubly_linked_lists/palindrome.c): A function to the largest palindrome made from the product of two 3-digit numbers.
 + [102-result](https://github.com/dmhenaopa/holbertonschool-low_level_programming/blob/main/0x17-doubly_linked_lists/102-result): The largest palindrome made from the product of two 3-digit numbers.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMTEzNDQ5Myw1Mzk4MDQ1NTddfQ==
+eyJoaXN0b3J5IjpbLTQ5OTU2OTQ4OSwtNzAxMTM0NDkzLDUzOT
+gwNDU1N119
 -->
