@@ -1,4 +1,16 @@
-## :pencil2: C - Doubly linked
+## :pencil2: C - Doubly linked lists
+This folder contains
+### Requirements:
+All commands were tested on Ubuntu 14.04 LTS. Although the commands might work well on other distributions, versions or operative systems. The Python linter was PEP8, and the version of Python was Python 3.4.3. 
+### Usage:
+For the C file, we need to use the compiler GCC:
+
+    gcc -Wall -Werror -Wextra -pedantic all_the_c_files.c -o output_name
+
+### Executable files:
+
+Here a short description of each script:
+
 A short description about each script:
 + 0-print_dlistint.c: Function that prints all the elements of a dlistint_t list.
 + 1-dlistint_len.c: Function that return the number of elements of a dlistint_t double list.
@@ -10,5 +22,5 @@ A short description about each script:
 + palindrome.c: A function to the largest palindrome made from the product of two 3-digit numbers.
 + 102-result: The largest palindrome made from the product of two 3-digit numbers.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDM2MDg3OCw1Mzk4MDQ1NTddfQ==
+eyJoaXN0b3J5IjpbMTkwNTU3NjU3OSw1Mzk4MDQ1NTddfQ==
 -->
