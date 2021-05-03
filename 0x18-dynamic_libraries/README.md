@@ -1,5 +1,6 @@
 ## :pencil2: C - Dynamic libraries
 
+
 ### Requirements:
 All commands were tested on Ubuntu 14.04 LTS. Although the commands might work well on other distributions, versions or operative systems. The programs and functions will be compiled with `gcc 4.8.4`. The prototypes of all the functions are included in the header file called  `lists.h`
 
@@ -21,5 +22,6 @@ Here a short description of each script/file:
 + [100-operations.so](https://github.com/dmhenaopa/holbertonschool-low_level_programming/blob/main/0x18-dynamic_libraries/100-operations.so): Dynamic library that contains C functions that can be called from Python.
 + [100-operations.c](https://github.com/dmhenaopa/holbertonschool-low_level_programming/blob/main/0x18-dynamic_libraries/100-operations.c): Functions with the neccesary operations to create a dynamic library. Additional to the header file [operations.h](https://github.com/dmhenaopa/holbertonschool-low_level_programming/blob/main/0x18-dynamic_libraries/operations.h).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDM4NjA4MDgsMTgxNDgxNjc4MV19
+eyJoaXN0b3J5IjpbLTEzMDU3MjE5NDYsLTIwNDM4NjA4MDgsMT
+gxNDgxNjc4MV19
 -->
