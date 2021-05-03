@@ -8,7 +8,7 @@ For the C file, we need to use the compiler GCC:
 `gcc -Wall -Werror -Wextra -pedantic all_the_c_files.c -o output_name`
 
 For the Dynamic libraries: 
-
+For incluide the library, use the  
 ### Executable files:
 Here a short description of each script/file:
 + libholberton.so: Dynamic library containing some dummy functions.
@@ -16,5 +16,5 @@ Here a short description of each script/file:
 + 100-operations.so: Dynamic library that contains C functions that can be called from Python.
 + 100-operations.c: Functions with the neccesary operations to create a dynamic library. Additional to the header file operations.h.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNzAxNjEzLDE4MTQ4MTY3ODFdfQ==
+eyJoaXN0b3J5IjpbMTQ5MDI1MTg0NSwxODE0ODE2NzgxXX0=
 -->
