@@ -8,3 +8,6 @@ A short description about each script:
 + 6-sum_dlistint.c: A function that returns the sum of all the data (n) of a dlistint_t linked list.
 + palindrome.c: A function to the largest palindrome made from the product of two 3-digit numbers.
 + 102-result: The largest palindrome made from the product of two 3-digit numbers.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNTM5ODA0NTU3XX0=
+-->
