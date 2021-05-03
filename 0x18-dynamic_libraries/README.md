@@ -11,8 +11,9 @@ For the Dynamic libraries:
 For incluide the library, use the flag -l with the name of the library. In this example we have the library holberton (libholberton.so):
 `gcc -Wall -pedantic -Werror -Wextra -L. 0-main.c -lholberton -o len`
 
-For incluide the C library in Python files
- 
+For incluide the C library in Python files, you need to include something like this in the Python file:
+`cops = ctypes.CDLL('./100-operations.so')`
+
 ### Executable files:
 Here a short description of each script/file:
 + libholberton.so: Dynamic library containing some dummy functions.
@@ -20,5 +21,5 @@ Here a short description of each script/file:
 + 100-operations.so: Dynamic library that contains C functions that can be called from Python.
 + 100-operations.c: Functions with the neccesary operations to create a dynamic library. Additional to the header file operations.h.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzgzMTEyNTUsMTgxNDgxNjc4MV19
+eyJoaXN0b3J5IjpbMTg0MDkxMzE0MSwxODE0ODE2NzgxXX0=
 -->
