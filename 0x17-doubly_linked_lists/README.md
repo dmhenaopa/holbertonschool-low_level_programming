@@ -5,4 +5,5 @@ A short description about each script:
 + 3-add_dnodeint_end.c: A function that adds a new node at the end of a dlistint_t list.
 + 4-free_dlistint.c: A function that frees a dlistint_t list.
 + 5-get_dnodeint.c: A function that returns the nth node of a dlistint_t linked list.
++ 6-sum_dlistint.c: A function that returns the sum of all the data (n) of a dlistint_t linked list.
 +
