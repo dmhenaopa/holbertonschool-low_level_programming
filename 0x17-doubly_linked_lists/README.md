@@ -1,3 +1,4 @@
+## :pencil2: C - Doubly linked
 A short description about each script:
 + 0-print_dlistint.c: Function that prints all the elements of a dlistint_t list.
 + 1-dlistint_len.c: Function that return the number of elements of a dlistint_t double list.
@@ -9,5 +10,5 @@ A short description about each script:
 + palindrome.c: A function to the largest palindrome made from the product of two 3-digit numbers.
 + 102-result: The largest palindrome made from the product of two 3-digit numbers.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM5ODA0NTU3XX0=
+eyJoaXN0b3J5IjpbLTE0MDM2MDg3OCw1Mzk4MDQ1NTddfQ==
 -->
