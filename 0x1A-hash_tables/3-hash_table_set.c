@@ -14,7 +14,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned long int size_hash_t, key_value;
 	hash_node_t *node, *actual_node;
 
-	if (ht == NULL || strcmp(key, " ") == 0)
+	if (ht == NULL || strcmp(key, "") == 0)
 		return (0);
 	/* Obtain the index for the hash table */
 	size_hash_t = hash_table_size(ht);
@@ -31,7 +31,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		node->next = NULL;
 		ht->array[key_value] = node;
 	}
-	/* There is one or more nodes in that index */
+	actual_node = ht->array[index];
 	else
 	{
 		/* Traverse the linked list to found if the key exists */
