@@ -11,14 +11,13 @@
 */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int size_hash_t, key_value;
+	unsigned long int key_value;
 	hash_node_t *node, *actual_node;
 
 	if (ht == NULL || strcmp(key, "") == 0)
 		return (0);
 	/* Obtain the index for the hash table */
-	size_hash_t = hash_table_size(ht);
-	key_value = (key_index((const unsigned char *) key, size_hash_t));
+	key_value = (key_index((const unsigned char *) key, ht->size));
 	/* Allocate memory for the node and put info in each node */
 	node = malloc(sizeof(hash_node_t));
 	if (node == NULL)
@@ -51,23 +50,4 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 	}
 	return (1);
-}
-
-/**
-* hash_table_size - C - Hash tables
-* @hash_t: Hash table
-*
-* Description: Function to know the length of the hash table
-* Return: Length of the hash table. Otherwise EXIT_FAILURE.
-*/
-unsigned long int hash_table_size(hash_table_t *hash_t)
-{
-	unsigned long int size;
-
-	if (hash_t == NULL)
-	{
-		exit(EXIT_FAILURE);
-	}
-	size = sizeof(hash_t) / sizeof(hash_t[0]);
-	return (size);
 }
