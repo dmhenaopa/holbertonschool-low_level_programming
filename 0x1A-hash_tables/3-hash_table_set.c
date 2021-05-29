@@ -25,13 +25,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	node->key = (char *)key;
 	node->value = (char *)value;
+	actual_node = ht->array[key_value];
 	/* Is the unique value in that index */
 	if (ht->array[key_value] == NULL)
 	{
 		node->next = NULL;
 		ht->array[key_value] = node;
 	}
-	actual_node = ht->array[index];
 	else
 	{
 		/* Traverse the linked list to found if the key exists */
