@@ -1,0 +1,3 @@
+# Makefile to compile *.c files
+all: main.c holberton.c
+	gcc main.c holberton.c -o holberton
