@@ -5,8 +5,8 @@ OBJ = $(SRC:.c=.o)
 NAME = holberton
 CFLAGS = -Wall -Werror -Wextra -pedantic
 #Build the executable
-all: $(OBJ) m.h
-	$(CC) $(OBJ) -o $(NAME)
+all: main.o holberton.o
+	$(CC) $? -o $(NAME)
 
 # Deletes temporary files along with the executable
 clean:
