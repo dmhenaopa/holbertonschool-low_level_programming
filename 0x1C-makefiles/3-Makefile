@@ -8,10 +8,6 @@ RM = rm
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
-main.o: main.c
-
-holberton.o: holberton.c
-
 # Deletes temporary files along with the executable
 clean:
 	$(RM) -f *~ $(NAME)
