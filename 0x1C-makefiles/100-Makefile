@@ -1,0 +1,23 @@
+# Makefile to compile *.c files
+CC = gcc
+SRC = main.c holberton.c
+OBJ = $(SRC:.c=.o)
+NAME = holberton
+CFLAGS = -Wall -Werror -Wextra -pedantic
+#Build the executable
+all: $(OBJ) m.h
+	$(CC) $(OBJ) -o $(NAME)
+
+# Deletes temporary files along with the executable
+clean:
+	$(RM) -f *~ $(NAME)
+
+#Deletes the object files
+oclean:
+	$(RM) -f $(OBJ)
+
+# Deletes all temporary files, executable and object files
+fclean: clean oclean
+
+# Forces recompilation of all source files
+re: oclean all
