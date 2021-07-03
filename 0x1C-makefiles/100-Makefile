@@ -10,11 +10,11 @@ all: $(OBJ) m.h
 
 # Deletes temporary files along with the executable
 clean:
-	$(RM) -f *~ $(NAME)
+	$(RM) *~ $(NAME)
 
 #Deletes the object files
 oclean:
-	$(RM) -f $(OBJ)
+	$(RM) $(OBJ)
 
 # Deletes all temporary files, executable and object files
 fclean: clean oclean
